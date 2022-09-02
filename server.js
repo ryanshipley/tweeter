@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const tweet = require("./models/tweet.js")
 let DATABASE_URL = "mongodb+srv://admin:abc1234@cluster0.5imhdly.mongodb.net/?retryWrites=true&w=majority";
 const db = mongoose.connection;
 mongoose.connect(DATABASE_URL);
